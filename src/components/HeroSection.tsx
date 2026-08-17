@@ -118,7 +118,7 @@ export const HeroSection: React.FC = () => {
             className="text-xs sm:text-sm font-semibold tracking-[0.35em] uppercase text-[#EAD8C7] hover:opacity-75 transition-opacity"
             style={{ fontFamily: "'Montserrat', sans-serif" }}
           >
-            LOHITHA.
+            KAVINRAJ.
           </a>
 
           {/* Navigation Links */}
@@ -194,7 +194,7 @@ export const HeroSection: React.FC = () => {
                 className="text-[10px] sm:text-[11px] md:text-xs font-normal tracking-[0.28em] uppercase text-[#C4B29E]"
                 style={{ fontFamily: "'Montserrat', sans-serif" }}
               >
-                FULL STACK DEVELOPER <span className="text-[#8C6D4F] mx-1">•</span> UI/UX DESIGNER <span className="text-[#8C6D4F] mx-1">•</span> DATA SCIENCE
+                SOFTWARE ENGINEER <span className="text-[#8C6D4F] mx-1">•</span> C/C++,LINUX <span className="text-[#8C6D4F] mx-1">•</span> BIOMEDICAL ENGINEER
               </p>
             </motion.div>
 
@@ -205,9 +205,9 @@ export const HeroSection: React.FC = () => {
               style={{ fontFamily: "'Montserrat', sans-serif" }}
             >
               <p>
-                I turn bold ideas into seamless digital experiences.
+                I leverage technology to build reliable solutions that solve real-world problems.
                 <br />
-                Where frontend meets powerful backend, and code transforms vision into impact.
+                Passionate about software development, innovation, and continuous growth across technology and healthcare domains.
               </p>
             </motion.div>
 
@@ -267,8 +267,9 @@ export const HeroSection: React.FC = () => {
               className="text-[9.5px] font-medium tracking-[0.24em] uppercase text-[#E0D3C5] space-y-1 mb-3"
               style={{ fontFamily: "'Montserrat', sans-serif" }}
             >
-              <p>CODE IS MY CRAFT.</p>
-              <p>IMPACT IS MY GOAL.</p>
+              <p>CODE IS MY PASSION.</p>
+              <p>INNOVATION IS MY PURPOSE.</p>
+              <p>GROWTH IS MY GOAL.</p> 
             </div>
 
             {/* 3. Gold Accent Line */}
@@ -282,7 +283,7 @@ export const HeroSection: React.FC = () => {
                 letterSpacing: '0.04em',
               }}
             >
-              Lohitha
+              Kavinraj
             </div>
           </motion.div>
         </div>
