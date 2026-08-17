@@ -4,35 +4,39 @@ import type { Variants } from 'framer-motion';
 
 const bentoCategories = [
   {
-    title: 'FRONTEND ARCHITECTURE',
-    badge: 'CORE PILLAR',
-    items: ['React.js', 'React Native', 'Tailwind CSS', 'Electron.js'],
-    description: 'Specialized in building high-performance client applications, custom component libraries, and immersive desktop/mobile interfaces.',
-    stat: '100% RESPONSIVE',
+    title: 'PROGRAMMING',
+    badge: 'CORE SKILLS',
+    items: ['C', 'C++', 'Java', 'Python'],
+    description:
+      'Strong foundation in programming fundamentals, object-oriented concepts, problem solving, data structures, and writing clean and efficient code.',
+    stat: 'CORE FOUNDATION',
     colSpan: 'lg:col-span-7',
   },
   {
-    title: 'DISTRIBUTED BACKEND',
-    badge: 'HIGH CONCURRENCY',
-    items: ['Node.js', 'Express.js', 'Spring Boot', 'Docker', 'Redis'],
-    description: 'Engineered RESTful APIs, JWT role-based access control, caching layers, and multi-tenant SaaS backend isolation.',
-    stat: '< 40ms LATENCY',
+    title: 'LINUX & SYSTEMS',
+    badge: 'SYSTEMS',
+    items: ['Linux', 'TCP/IP', 'POSIX Sockets', 'Client-Server', 'Multithreading'],
+    description:
+      'Hands-on experience with Linux-based development and system programming concepts through client-server applications and multithreaded C++ development.',
+    stat: 'SYSTEM PROGRAMMING',
     colSpan: 'lg:col-span-5',
   },
   {
-    title: 'DATA PLATFORMS',
-    badge: 'PERSISTENCE',
-    items: ['MongoDB Atlas', 'PostgreSQL', 'MySQL'],
-    description: 'Designing resilient relational and document schemas with optimized indexing and transaction isolation.',
-    stat: 'ACID & NOSQL',
+    title: 'WEB TECHNOLOGIES',
+    badge: 'DEVELOPMENT',
+    items: ['HTML', 'CSS', 'JavaScript', 'React.js'],
+    description:
+      'Working knowledge of web development fundamentals with experience building responsive interfaces and understanding modern frontend development concepts.',
+    stat: 'WEB FUNDAMENTALS',
     colSpan: 'lg:col-span-5',
   },
   {
-    title: 'ALGORITHMS & MACHINE LEARNING',
-    badge: 'INTELLIGENCE',
-    items: ['C++', 'Python', 'Java', 'scikit-learn', 'OpenAI API'],
-    description: '1200+ algorithm problems solved. Applied Random Forest classifiers for real-time risk heatmaps and NLP policy analyzers.',
-    stat: '1200+ SOLVED',
+    title: 'DATABASE & TOOLS',
+    badge: 'TECHNICAL TOOLS',
+    items: ['MySQL', 'Git', 'GitHub', 'VS Code', 'REST APIs'],
+    description:
+      'Familiar with relational databases, version control, development tools, and basic API concepts used in software development projects.',
+    stat: 'DEVELOPMENT TOOLS',
     colSpan: 'lg:col-span-7',
   },
 ];
@@ -105,10 +109,10 @@ export const SkillsSection: React.FC = () => {
             style={{ fontFamily: "'Bebas Neue', sans-serif" }}
           >
             <span className="block text-transparent bg-clip-text bg-gradient-to-b from-[#FFFFFF] via-[#D5CBC0] to-[#605448] drop-shadow-[0_4px_12px_rgba(0,0,0,0.8)]">
-              ARCHITECTURAL MASTERY.
+              TECHNICAL SKILLS.
             </span>
             <span className="block text-transparent bg-clip-text bg-gradient-to-b from-[#F7E7C4] via-[#C99E5D] to-[#543B1A] drop-shadow-[0_8px_25px_rgba(201,158,93,0.35)]">
-              PRECISION APPLIED.
+              PRACTICAL FOUNDATION.
             </span>
           </h2>
         </motion.div>
