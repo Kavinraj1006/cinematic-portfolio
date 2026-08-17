@@ -8,7 +8,10 @@ interface Project {
   category: string;
   description: string;
   tech: string[];
-  metrics: { label: string; value: string }[];
+  metrics: {
+    label: string;
+    value: string;
+  }[];
 }
 
 const projects: Project[] = [
@@ -61,11 +64,11 @@ const projects: Project[] = [
     description:
       'Developed a basic Python application to record and manage daily expenses. Implemented user input, categories, calculations, file handling, and simple summary generation to help track spending and understand monthly expenses.',
     tech: [
-       'Python',
-       'Functions',
-       'Lists & Dictionaries',
-       'File Handling',
-       'Exception Handling',
+      'Python',
+      'Functions',
+      'Lists & Dictionaries',
+      'File Handling',
+      'Exception Handling',
     ],
     metrics: [
       { label: 'LANGUAGE', value: 'Python' },
@@ -87,9 +90,9 @@ const projects: Project[] = [
       'Exception Handling',
     ],
     metrics: [
-       { label: 'LANGUAGE', value: 'Java' },
-       { label: 'CONCEPTS', value: 'OOP' },
-       { label: 'DATA', value: 'Student Records' },
+      { label: 'LANGUAGE', value: 'Java' },
+      { label: 'CONCEPTS', value: 'OOP' },
+      { label: 'DATA', value: 'Student Records' },
     ],
   },
 ];
@@ -102,10 +105,10 @@ export const ProjectsSection: React.FC = () => {
     >
       {/* Studio Ambient Glows */}
       <div className="absolute top-1/4 left-1/3 w-[36rem] h-[36rem] bg-[#D4AF37]/5 rounded-full blur-[180px] pointer-events-none" />
+
       <div className="absolute bottom-1/4 right-1/4 w-[30rem] h-[30rem] bg-[#8C6D4F]/5 rounded-full blur-[170px] pointer-events-none" />
 
       <div className="max-w-7xl mx-auto w-full relative z-10">
-        
         {/* Eyebrow Header */}
         <motion.div
           initial={{ opacity: 0, x: -20 }}
@@ -120,6 +123,7 @@ export const ProjectsSection: React.FC = () => {
           >
             02 / FEATURED WORK
           </span>
+
           <div className="w-20 h-[1px] bg-gradient-to-r from-[#D4AF37]/80 via-[#8C6D4F]/40 to-transparent" />
         </motion.div>
 
@@ -128,7 +132,10 @@ export const ProjectsSection: React.FC = () => {
           initial={{ opacity: 0, y: 25 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.9, ease: [0.16, 1, 0.3, 1] }}
+          transition={{
+            duration: 0.9,
+            ease: [0.16, 1, 0.3, 1],
+          }}
           className="flex flex-col md:flex-row md:items-end justify-between mb-16"
         >
           <h2
@@ -138,6 +145,7 @@ export const ProjectsSection: React.FC = () => {
             <span className="block text-transparent bg-clip-text bg-gradient-to-b from-[#FFFFFF] via-[#D5CBC0] to-[#605448] drop-shadow-[0_4px_12px_rgba(0,0,0,0.8)]">
               SELECTED WORKS.
             </span>
+
             <span className="block text-transparent bg-clip-text bg-gradient-to-b from-[#F7E7C4] via-[#C99E5D] to-[#543B1A] drop-shadow-[0_8px_25px_rgba(201,158,93,0.35)]">
               BUILT WITH PURPOSE
             </span>
@@ -147,32 +155,35 @@ export const ProjectsSection: React.FC = () => {
             className="text-xs sm:text-sm font-light text-[#A8988B] max-w-sm mt-4 md:mt-0 leading-relaxed"
             style={{ fontFamily: "'Montserrat', sans-serif" }}
           >
-            A collection of projects showcasing my approach to software development, problem solving, and building reliable digital solutions.
+            A collection of projects showcasing my approach to software
+            development, problem solving, and building reliable digital
+            solutions.
           </p>
         </motion.div>
 
         {/* React Bits Stacking Deck */}
-        {/* React Bits Stacking Deck */}
-<ScrollStack
-  itemDistance={20}
-  itemScale={0.035}
-  itemStackDistance={28}
-  stackPosition="15%"
-  scaleEndPosition="6%"
-  baseScale={0.88}
-  useWindowScroll={true}
->
+        <ScrollStack
+          itemDistance={20}
+          itemScale={0.035}
+          itemStackDistance={28}
+          stackPosition="15%"
+          scaleEndPosition="6%"
+          baseScale={0.88}
+          useWindowScroll={true}
+        >
           {projects.map((project) => (
             <ScrollStackItem key={project.title}>
               <div className="relative w-full rounded-2xl border border-[#8C6D4F]/50 bg-[#0E0C0A] p-8 sm:p-12 shadow-[0_25px_70px_rgba(0,0,0,0.98)] group overflow-hidden transition-colors duration-500 hover:border-[#D4AF37]">
-                
                 {/* Top Gold Border Light Flare */}
                 <div className="absolute top-0 left-0 right-0 h-[1px] bg-gradient-to-r from-transparent via-[#D4AF37]/80 to-transparent" />
 
                 {/* Corner Minimal L-Brackets */}
                 <div className="absolute top-0 left-0 w-4 h-4 border-t-2 border-l-2 border-[#D4AF37]/60 group-hover:border-[#D4AF37] transition-colors" />
+
                 <div className="absolute top-0 right-0 w-4 h-4 border-t-2 border-r-2 border-[#D4AF37]/60 group-hover:border-[#D4AF37] transition-colors" />
+
                 <div className="absolute bottom-0 left-0 w-4 h-4 border-b-2 border-l-2 border-[#D4AF37]/60 group-hover:border-[#D4AF37] transition-colors" />
+
                 <div className="absolute bottom-0 right-0 w-4 h-4 border-b-2 border-r-2 border-[#D4AF37]/60 group-hover:border-[#D4AF37] transition-colors" />
 
                 {/* Big Background Watermark Number */}
@@ -185,19 +196,21 @@ export const ProjectsSection: React.FC = () => {
 
                 {/* Content Grid */}
                 <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start relative z-10">
-                  
-                  {/* Left Column (7 Cols) */}
+                  {/* Left Column */}
                   <div className="lg:col-span-7 flex flex-col justify-between">
                     <div>
+                      {/* Project Category */}
                       <div className="flex items-center space-x-3 mb-4">
                         <span className="text-xs font-mono font-bold text-[#D4AF37]">
                           {project.number} //
                         </span>
+
                         <span className="text-[10.5px] font-mono tracking-[0.25em] uppercase text-[#A8988B]">
                           {project.category}
                         </span>
                       </div>
 
+                      {/* Project Title */}
                       <h3
                         className="text-4xl sm:text-5xl lg:text-6xl font-normal tracking-tight text-white mb-4 group-hover:text-[#F7E7C4] transition-colors uppercase leading-[0.9]"
                         style={{ fontFamily: "'Bebas Neue', sans-serif" }}
@@ -205,6 +218,7 @@ export const ProjectsSection: React.FC = () => {
                         {project.title}
                       </h3>
 
+                      {/* Description */}
                       <p
                         className="text-xs sm:text-sm md:text-[14px] font-light text-[#BDB0A4] leading-[1.85] tracking-wide mb-8 max-w-2xl"
                         style={{ fontFamily: "'Montserrat', sans-serif" }}
@@ -215,47 +229,48 @@ export const ProjectsSection: React.FC = () => {
 
                     {/* Tech Stack Pills */}
                     <div className="flex flex-wrap gap-2 pt-6 border-t border-[#8C6D4F]/25">
-                      {project.tech.map((t) => (
+                      {project.tech.map((tech) => (
                         <span
-                          key={t}
+                          key={tech}
                           className="px-3 py-1 text-[10px] font-medium tracking-[0.16em] uppercase rounded-sm border border-[#8C6D4F]/40 bg-[#16120E] text-[#E8D7C5] group-hover:border-[#D4AF37]/50 transition-all duration-300"
                           style={{ fontFamily: "'Montserrat', sans-serif" }}
                         >
-                          {t}
+                          {tech}
                         </span>
                       ))}
                     </div>
                   </div>
 
-                  {/* Right Column (5 Cols) */}
+                  {/* Right Column */}
                   <div className="lg:col-span-5 flex flex-col justify-between h-full space-y-6 lg:pl-6 lg:border-l lg:border-[#8C6D4F]/25">
                     <div className="space-y-3">
+                      {/* Metrics Heading */}
                       <span className="text-[9.5px] font-mono tracking-[0.25em] uppercase text-[#8C6D4F] block mb-2">
                         // ARCHITECTURE METRICS
                       </span>
-                      {project.metrics.map((m) => (
+
+                      {/* Metrics */}
+                      {project.metrics.map((metric) => (
                         <div
-                          key={m.label}
+                          key={metric.label}
                           className="p-3.5 rounded-sm border border-[#8C6D4F]/25 bg-[#050403] flex items-center justify-between"
                         >
                           <span className="text-[10px] font-mono text-[#A8988B]">
-                            {m.label}
+                            {metric.label}
                           </span>
+
                           <span className="text-[11px] font-mono font-medium text-[#F7E7C4]">
-                            {m.value}
+                            {metric.value}
                           </span>
                         </div>
                       ))}
                     </div>
-                    </a>
                   </div>
-
                 </div>
               </div>
             </ScrollStackItem>
           ))}
         </ScrollStack>
-
       </div>
     </section>
   );
