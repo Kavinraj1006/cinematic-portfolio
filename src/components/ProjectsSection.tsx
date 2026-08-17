@@ -7,7 +7,6 @@ interface Project {
   title: string;
   category: string;
   description: string;
-  githubUrl: string;
   tech: string[];
   metrics: { label: string; value: string }[];
 }
