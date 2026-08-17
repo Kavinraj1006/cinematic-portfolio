@@ -15,97 +15,82 @@ interface Project {
 const projects: Project[] = [
   {
     number: '01',
-    title: 'PolicyGuard AI',
-    category: 'AI / LEGAL-TECH PLATFORM',
+    title: 'Call Data Records (CDR)',
+    category: 'C / C++ / LINUX',
     description:
-      'AI-powered platform engineered for automated privacy policy analysis and legal contract auditing across web, desktop, and mobile. Implements NLP extraction, real-time risk alert detection, and generative risk score intelligence.',
-    githubUrl: 'https://github.com/lohithadamisetti123',
+      'Designed and developed a TCP/IP client-server platform in C++17 with POSIX sockets, supporting multi-client connections, user authentication, and session-based data processing. Implemented parallel CDR processing using multithreading, mutex-based synchronization, and file-based reporting to generate customer billing and inter-operator settlement analytics.',
     tech: [
-      'React.js',
-      'React Native',
-      'Electron.js',
-      'Node.js',
-      'Express.js',
-      'MongoDB Atlas',
-      'OpenAI API',
-      'Prompt Eng',
-      'NLP',
-      'Docker',
-      'JWT',
+      'C',
+      'C++17',
+      'Linux',
+      'TCP/IP',
+      'POSIX Sockets',
+      'Multithreading',
+      'Mutex',
+      'Client-Server',
     ],
     metrics: [
-      { label: 'PLATFORMS', value: 'Web, Mobile, Desktop' },
-      { label: 'ENGINE', value: 'OpenAI NLP / GPT' },
-      { label: 'PIPELINE', value: 'Automated Scoring' },
+      { label: 'PROTOCOL', value: 'TCP/IP' },
+      { label: 'ARCHITECTURE', value: 'Client-Server' },
+      { label: 'PROCESSING', value: 'Multithreaded' },
     ],
   },
   {
     number: '02',
-    title: 'Software Release Risk Heatmap',
-    category: 'MACHINE LEARNING / DEV PLATFORM',
+    title: 'Alzwatch',
+    category: 'IOT / HEALTHCARE',
     description:
-      'Full-stack predictive release management platform utilizing Machine Learning. Implements a trained Random Forest classifier to categorize release stability from Low to Critical risk, rendered over a live interactive team heatmap.',
-    githubUrl: 'https://github.com/lohithadamisetti123',
+      'Designed and developed a wearable IoT device to monitor vital signs and provide real-time GPS tracking for Alzheimer’s patients, helping improve patient safety and enabling continuous monitoring and location tracking.',
     tech: [
-      'React.js',
-      'TypeScript',
-      'Python',
-      'FastAPI',
-      'scikit-learn',
-      'PostgreSQL',
-      'Tailwind CSS',
-      'REST APIs',
-      'JWT',
+      'IoT',
+      'Embedded Systems',
+      'Sensors',
+      'GPS',
+      'Vital Sign Monitoring',
+      'Real-Time Tracking',
     ],
     metrics: [
-      { label: 'MODEL', value: 'Random Forest' },
-      { label: 'ACCURACY', value: 'High Precision' },
-      { label: 'DASHBOARD', value: 'Live Risk Heatmap' },
+      { label: 'DOMAIN', value: 'Healthcare IoT' },
+      { label: 'MONITORING', value: 'Vital Signs' },
+      { label: 'TRACKING', value: 'Real-Time GPS' },
     ],
   },
   {
     number: '03',
-    title: 'Multi-Tenant SaaS Platform',
-    category: 'CLOUD / DISTRIBUTED SYSTEM',
+    title: 'Personal Expense Tracker',
+    category: 'PYTHON / BASIC APPLICATION',
     description:
-      'Enterprise-grade multi-tenant platform built for unified management of teams, projects, and execution lifecycles. Architected with strict tenant data isolation, granular Role-Based Access Control (RBAC), and containerized deployments.',
-    githubUrl: 'https://github.com/lohithadamisetti123',
+      'Developed a basic Python application to record and manage daily expenses. Implemented user input, categories, calculations, file handling, and simple summary generation to help track spending and understand monthly expenses.',
     tech: [
-      'Node.js',
-      'Express.js',
-      'PostgreSQL',
-      'React',
-      'Docker',
-      'JWT',
-      'RBAC',
-      'REST APIs',
+       'Python',
+       'Functions',
+       'Lists & Dictionaries',
+       'File Handling',
+       'Exception Handling',
     ],
     metrics: [
-      { label: 'ARCHITECTURE', value: 'Multi-Tenant' },
-      { label: 'SECURITY', value: 'RBAC Isolation' },
-      { label: 'CONTAINERS', value: 'Docker Compose' },
+      { label: 'LANGUAGE', value: 'Python' },
+      { label: 'STORAGE', value: 'File Handling' },
+      { label: 'FEATURE', value: 'Expense Tracking' },
     ],
   },
   {
     number: '04',
-    title: 'Payment Gateway with Hosted Checkout',
-    category: 'FINTECH / PAYMENT SYSTEMS',
+    title: 'Student Management System',
+    category: 'JAVA / BASIC APPLICATION',
     description:
-      'End-to-end hosted payment gateway infrastructure supporting seamless merchant order generation, multi-currency processing, and secure consumer checkout via UPI and Cards with webhook transaction verification.',
-    githubUrl: 'https://github.com/lohithadamisetti123',
+      'Developed a basic Java application to manage student information such as student ID, name, marks, and grades. Implemented object-oriented programming concepts, user input handling, conditional statements, loops, and basic data management.',
     tech: [
-      'Node.js',
-      'Spring Boot',
-      'PostgreSQL',
-      'React',
-      'Docker',
-      'REST APIs',
-      'UPI / Card Integrations',
+      'Java',
+      'OOP',
+      'Classes & Objects',
+      'Arrays',
+      'Exception Handling',
     ],
     metrics: [
-      { label: 'PROTOCOLS', value: 'UPI & Cards' },
-      { label: 'BACKEND', value: 'Spring Boot + Node' },
-      { label: 'DATABASE', value: 'ACID PostgreSQL' },
+       { label: 'LANGUAGE', value: 'Java' },
+       { label: 'CONCEPTS', value: 'OOP' },
+       { label: 'DATA', value: 'Student Records' },
     ],
   },
 ];
@@ -155,7 +140,7 @@ export const ProjectsSection: React.FC = () => {
               SELECTED WORKS.
             </span>
             <span className="block text-transparent bg-clip-text bg-gradient-to-b from-[#F7E7C4] via-[#C99E5D] to-[#543B1A] drop-shadow-[0_8px_25px_rgba(201,158,93,0.35)]">
-              ENGINEERED VALUE.
+              BUILT WITH PURPOSE
             </span>
           </h2>
 
@@ -163,7 +148,7 @@ export const ProjectsSection: React.FC = () => {
             className="text-xs sm:text-sm font-light text-[#A8988B] max-w-sm mt-4 md:mt-0 leading-relaxed"
             style={{ fontFamily: "'Montserrat', sans-serif" }}
           >
-            Scroll down to unfold the system architecture cards. Each platform was built to solve complex operational challenges.
+            A collection of projects showcasing my approach to software development, problem solving, and building reliable digital solutions.
           </p>
         </motion.div>
 
